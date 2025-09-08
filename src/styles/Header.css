@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+
+.navbar{
+    background-color: #3f083c;
+    /* position: fixed; */
+    width: 100%;
+    color: white;
+    /* margin-bottom: 1px solid white; */
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul,.nav-panel-diff-2{
+    list-style-type: none;
+    display: flex;
+    gap: 35px;
+    font-size: 20px;
+}
+
+.nav-panel-diff-2{
+    margin-right: 70px;  
+    margin-top: 7px;
+
+}
+.nav-panel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-panel-diff{
+    margin-left: 100px;
+}
+
+.Heading{
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+.Heading,.dropdown-toggle:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px ; 
+}
+
+.list-items li:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px ; 
+}
+
+.dropdown-toggle::after {
+  display:none;
+}
+
+
+
+/* @media screen and (max-width:700px){
+    .list-items{
+        display: none;
+    }
+    .nav-panel-diff{
+        width: 100%;
+        text-align: center;
+    }
+    .nav-panel-diff-3{
+        width: 100%;
+       display: flex;
+       justify-content: end;
+    }
+    
+} */
+@media screen and (min-width: 700px) and (max-width: 890px){
+    ul,.nav-panel-diff-2{
+        font-size: 16px;
+        gap: 15px;
+        margin-top: 6px;
+    }
+    .dropdown-container{
+        margin-top: 3px;
+    }
+    .nav-panel-diff-2{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 705px){
+    ul,.nav-panel-diff-2{
+        font-size: 16px;
+        gap: 15px;
+        margin-top: 6px;
+    }
+     ul li:first-child{
+        display: none;
+    }
+    .dropdown-container{
+        margin-top: 3px;
+    }
+    .nav-panel-diff-2{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 475px) and (max-width: 575px){
+    ul,.nav-panel-diff-2{
+        font-size: 16px;
+        gap: 10px;
+        margin-top: 6px;
+    }
+    .Heading{
+      margin-right: 15px;
+    }
+    .A,.S{
+        display: none;
+    }
+
+    .dropdown-container{
+        margin-top: 3px;
+    }
+    .nav-panel-diff-2{
+        margin-right: 50px;
+    }
+}
+
+@media screen and  (max-width: 540px){
+    .nav-panel-diff{
+        width: 100%;
+        text-align: center;
+    }
+    .nav-panel-diff-2{
+        margin-right: 50px;
+    }
+    .list-items{
+        display: none;
+    }
+    /* .nav-panel-diff-2 .dropdown-container{
+        display: none;
+    } */
+    /* .Heading,.nav-panel-diff{
+        margin-right: 20px;
+    } */
+}
+

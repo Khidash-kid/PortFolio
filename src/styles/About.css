@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.hero-div{
+    height: 150px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.avatar{
+    height: 270px;
+    width: 270px;
+    min-width: 240px;
+    border-top-right-radius:50px ;
+     border-top-left-radius:50px ;
+      border-bottom-right-radius:50px ;
+       border-bottom-left-radius:50px ;
+    /* border-radius: 50%; */
+    /* background-color: black; */
+    background-image: url('../assets/kid-profile.jpg');
+    background-size: cover;
+    border: 2px solid #3f083c; 
+     box-shadow: 0 0 15px #3f083c;
+     margin-left: 20px;
+     animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content{
+     width: 700px;
+    animation: slideIn 1.7s ease-in-out;
+    min-width: 600px;
+}
+
+.button{
+    background-color: #3f083c;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+.avatar:hover{
+    box-shadow: 0 0 20px #3f083c;
+    cursor: pointer;
+}
+
+.hero-content p:hover{
+    cursor: pointer;
+}
+
+.button:hover{
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(221, 66, 66);
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+
+@media screen and (min-width:780px) and (max-width:950px){
+    .hero-content{
+     width: 500px;
+    animation: slideIn 1.7s ease-in-out;
+    min-width: 400px;
+}
+}
+
+@media screen and (min-width:600px) and (max-width:780px){
+    .hero-content{
+     width: 300px;
+    animation: slideIn 1.7s ease-in-out;
+    min-width: 300px;
+    height: 300px;
+}
+.avatar{
+    height: 190px;
+    width: 170px;
+    min-width: 160px; 
+}
+}
+
+
+@media screen and  (max-width:600px){
+
+.hero{
+    height: 700px;
+}
+
+
+.hero-div{
+    height: 700px;
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+    .hero-content{
+     width: 300px;
+    animation: slideIn 1.7s ease-in-out;
+    min-width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.avatar{
+    height: 190px;
+    width: 170px;
+    min-width: 160px; 
+}
+}

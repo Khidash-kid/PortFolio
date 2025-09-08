@@ -1,0 +1,155 @@
+Section
+.experience-section {
+  padding: 50px 20px;
+}
+
+.experience-section{
+    margin-top: 5rem;
+}
+
+#experience h1 {
+  /* text-align: center; */
+  /* margin-top: 20px; */
+  
+  font-size: 2rem;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* margin-bottom: 40px; */
+  color: #7c1777ff;
+  /* text-shadow: 0px 0px 10px #7c1777ff; */
+}
+
+.experience-section h1:hover{
+    /* color: #4b0082ff; */
+    
+    text-shadow: 0px 0px 20px #7c1777ff;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Timeline container */
+.timeline {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  max-width: 900px;
+  /* padding-left: 40px; */
+  overflow: hidden;
+}
+
+/* Vertical line */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 4px;
+  height: 0;
+  background: #7c1777ff;
+  transition: height 0.4s ease;
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+}
+
+/* Dots */
+.timeline-dot {
+  position: absolute;
+  left: 7px;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #ccc;
+  /* background: #ccc; */
+  transition: all 0.3s ease;
+    z-index: 2;
+}
+
+/* Dot colors */
+.color-blue { background: #7c1777ff; }
+.color-green { background: #7c1777ff; }
+.color-purple { background: #6f42c1; }
+
+/* Active state glow */
+.timeline-item.active .timeline-dot {
+  transform: scale(1.2);
+  box-shadow: 0 0 12px #7c1777ff;
+}
+
+/* Card styling */
+.timeline-content {
+    flex: 1;
+    width: 90%;
+    min-width: 0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.timeline-content ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 6px 20px #7c1777ff;
+  transform: translateX(-25px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Different card colors */
+.card-blue { background: #e7f1ff; border-left: 5px solid #0d6efd; }
+.card-green { background: #eafaf1; border-left: 5px solid #198754; }
+.card-purple { background: #f3e8ff; border-left: 5px solid #6f42c1; }
+
+/* Date text */
+.date {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 25px;
+  }
+
+  .timeline-content {
+    margin-left: 35px;
+    font-size: 0.9rem;
+  }
+
+  .timeline-dot {
+    width: 14px;
+    height: 14px;
+    left: 4px;
+  }
+
+  .timeline-line {
+    left: 10px;
+    width:3px;
+}
+}
+
+@media (max-width: 480px) {
+  .timeline-content {
+    margin-left: 30px;
+    padding: 15px;
+    font-size:0.85rem;
+}
+
+}

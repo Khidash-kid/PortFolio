@@ -1,0 +1,113 @@
+.projects-container{
+    margin-top: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.card{
+    width: 100%;
+    height: 300px;
+    border: 2px solid #7c1777ff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+     box-shadow: 5px 5px 10px rgb(80, 10, 76);
+}
+
+.card-img{
+    background-image: url();
+    width: 100%;
+    height: 60%;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+    /* border: 2px solid black; */
+}
+
+.card-details{
+    border-radius: 0px 0px 25px 25px;
+    height: 40%;
+    width: 100%;
+    background-color:rgb(7, 7, 65);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    /* align-items: center; */
+}
+
+.card-details p{
+    /* font-size: 1.2rem; */
+    /* font-weight: bold; */
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    /* text-shadow: 0px 0px 10px #4b0082ff; */
+}
+
+.card-details a,i{
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.card-details a:hover,i:hover{
+    color: #58c4c6;
+    /* text-shadow: 0px 0px 10px #4b0082ff; */
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;    
+} 
+
+
+.projects-container h1{
+    text-align: center;
+     font-size: 2rem;
+    color: #7c1777ff;
+}
+
+.projects-container,.h1 {
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* animation: f 1.5s ease-in-out; */
+    /* text-align: center; */
+}
+
+.custom-margin{
+    margin-top: 1rem;
+}
+
+.card:hover{
+    transform:translateY(-30px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.project-card-1 .card-img{
+    background-image: url('../assets/videocall.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.project-card-2 .card-img{
+    background-image: url('../assets/travel-tracker.jpg');
+    background-size: cover;     
+  background-position: center;   
+  background-repeat: no-repeat;  
+  height: 100vh;                 
+  width: 100%;
+}
+.project-card-3 .card-img{
+    background-image: url('../assets/blog.png');
+    background-size: cover;     
+  background-position: center;   
+}
+
+@media screen  and (max-width: 500px) {
+    .card-details p{
+        font-size: 0.8rem;
+    }   
+}

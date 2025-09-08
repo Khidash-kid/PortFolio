@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Hero{
+    height: 90vh;
+    margin-bottom: 20px;
+    
+    /* width: 100vw; */ 
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-image: url('../assets/pexels-eva-bronzini-7641124.jpg');
+    background-size: cover; */
+    /* background-color: black; 
+    color: white; */
+    /* font-family: Proxima Nova; */
+}
